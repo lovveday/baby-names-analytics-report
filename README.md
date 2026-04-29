@@ -8,7 +8,9 @@ I came across the baby names dataset on data.gov, which contained a ZIP file of 
 After exploring the site, one thing stood out immediately: it wasn’t just data, it was interactive.
 That’s what inspired this project.
 
-Instead of building a static dashboard, I set out to recreate that experience in Power BI — something users can explore, not just look at.
+Instead of building a static dashboard, I set out to recreate that experience in Power BI, something users can explore, not just look at.
+
+
 
 
 **My Objective**
@@ -21,15 +23,21 @@ Identify rising and declining names
 Basically, turn raw data into something people can play with.
 
 
+
+
 Data Pipeline (End-to-End)
 🔹 Data Source:
 The dataset was downloaded from data.gov
 Provided as a ZIP file containing _.txt_ files for each year
 
+
+
 🔹 Data Processing (Python)
 The data was extracted and combined from multiple yearly files, 
 and the raw .txt data was converted into a structured CSV. 
 The dataset was cleaned and standardized
+
+
 
 🔹 Data Storage (SQL)
 The cleaned data was loaded into an SQL database
@@ -37,9 +45,12 @@ The data was queried to validate the structure and relationships
 Ran checks to ensure accuracy before visualization
 (Yes, I didn’t just trust Power BI blindly 😄)
 
+
+
 🔹 Data Visualization (Power BI)
 I built an interactive dashboard inspired by the SSA website
 Verified Power BI results against SQL queries for consistency
+
 
 
 **Key Features**
@@ -47,6 +58,8 @@ Name Explorer Page:
 There you can Search any name
 View popularity trend over time
 Track ranking changes dynamically
+
+
 
 Dynamic Ranking System:
 Real-time ranking based on filters
@@ -56,17 +69,24 @@ Gender
 Decade
 Handles ranking edge cases (ties, duplicates)
 
+
+
 Change in Popularity:
 Tracks how names rise or fall over time
 Based on rank movement (SSA-style)
+
+
 
 Gender Comparison Table (Top 10 names page)
 Displays top male and female names side-by-side
 Custom-built ranking system aligned by rank
 
+
+
 Decade Analysis:
 Aggregated insights across decades
 Helps identify long-term naming trends
+
 
 
 Interactive Filters
@@ -77,11 +97,13 @@ Name (search-enabled slicer)
 Decade
 
 
+
 **What I Learned**
 How to handle filter context in DAX (this one humbled me 😅)
 Building ranking systems that actually work
 Importance of validating dashboards with SQL
 Designing reports for user interaction, not just visuals
+
 
 
 **Challenges & Solutions**
