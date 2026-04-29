@@ -54,7 +54,9 @@ Verified Power BI results against SQL queries for consistency
 
 
 **Key Features**
+
 Name Explorer Page:
+
 There you can Search any name
 View popularity trend over time
 Track ranking changes dynamically
@@ -62,6 +64,7 @@ Track ranking changes dynamically
 
 
 Dynamic Ranking System:
+
 Real-time ranking based on filters
 _Works across:_
 Year
