@@ -6,7 +6,6 @@ By _Osekhuemen Peter-Imoisili_
 
 I came across the baby names dataset on data.gov, which contained a ZIP file of yearly text files and a link to the SSA website.
 After exploring the site, one thing stood out immediately: it wasn’t just data, it was interactive.
-
 That’s what inspired this project.
 
 Instead of building a static dashboard, I set out to recreate that experience in Power BI — something users can explore, not just look at.
@@ -19,12 +18,10 @@ Search any name
 Explore trends across years and decades
 Compare male vs female name popularity
 Identify rising and declining names
-
 Basically, turn raw data into something people can play with.
 
 
 Data Pipeline (End-to-End)
-
 🔹 Data Source:
 The dataset was downloaded from data.gov
 Provided as a ZIP file containing _.txt_ files for each year
@@ -38,7 +35,6 @@ The dataset was cleaned and standardized
 The cleaned data was loaded into an SQL database
 The data was queried to validate the structure and relationships
 Ran checks to ensure accuracy before visualization
-
 (Yes, I didn’t just trust Power BI blindly 😄)
 
 🔹 Data Visualization (Power BI)
@@ -74,9 +70,7 @@ Helps identify long-term naming trends
 
 
 Interactive Filters
-
 Users can filter by:
-
 Year (Dropdown slider)
 Gender
 Name (search-enabled slicer)
