@@ -5,7 +5,6 @@ By _Osekhuemen Peter-Imoisili_
 **Project Story**
 
 I came across the baby names dataset on data.gov, which contained a ZIP file of yearly text files and a link to the SSA website.
-
 After exploring the site, one thing stood out immediately: it wasn’t just data, it was interactive.
 
 That’s what inspired this project.
